@@ -1,0 +1,93 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f6f6fa;
+  padding: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sidebar {
+  background: #e0ebfe;
+  padding: 20px;
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.photo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.sidebar-content h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #161d2a;
+}
+
+.sidebar-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sidebar-content ul li {
+  margin: 5px 0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.my-info h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.my-info h1 {
+  font-size: 30px;
+  color: #000;
+}
+
+.my-projects ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.my-projects ul li a {
+  text-decoration: none;
+  color: #005fff;
+}
+
+.work-experience div {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-content {
+    padding: 20px;
+  }
+}
